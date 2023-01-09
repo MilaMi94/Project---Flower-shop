@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moja cvećara</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- nav -->
+  <div id="moja_cvecara">
+    <nav class="row">
+      <ul>
+        <li class="col-2">Moja cvećara</li>
+        <li class="col-2"><a href="#moja_cvecara">Naslovna</a></li>
+        <li class="col-2"><a href="#odaberite_cvece">Naručivanje</a></li>
+        <li class="col-6"></li>
+      </ul>
+    </nav>
+  </div>
+  
+  <!-- Carousel -->
+  <div class="row">
+    <div class="slideshow-container col-12">
+      <div class="mySlides fade">
+        <img class="slides" src="pozadina_slide/slika3.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img class="slides" src="pozadina_slide/slika1.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img class="slides" src="pozadina_slide/slika4.jpg" style="width:100%">
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+  </div>
+
+
+  <!-- forma -->
+  <div class="row order">
+    <div class="col-3"> &nbsp;</div>
+    <div class="col-6">
+      <form action="">
+        <h3 id="odaberite_cvece">Odaberite cveće</h3>
+        <input type="number" onkeypress="return event.charCode >= 48" min="1" id="r"
+          placeholder="Cena po cvetu je 150 din." class="input0 " /><b>Ruže</b><br>
+        <input type="number" onkeypress="return event.charCode >= 48" min="1" id="lj"
+          placeholder="Cena po cvetu je 120 din." class="input0" /><b>Ljiljani</b> <br>
+        <input type="number" onkeypress="return event.charCode >= 48" min="1" id="g"
+          placeholder="Cena po cvetu je 70 din." class="input0" /><b>Gerberi</b><br>
+        <h3>Dodatni pokloni</h3>
+        <input type="checkbox" name="dodatni_pokloni" id="bombonjera" value="bombonjera" />Bombonjera <br>
+        <input type="checkbox" name="dodatni_pokloni" id="cokolada" value="cokolada" />Čokolada <br>
+        <input type="checkbox" name="dodatni_pokloni" id="sampanjac" value="sampanjac" />Šampanjac <br>
+        <h3>Plaćanje</h3>
+        <input type="radio" name="placanje" id="kes" value="kes" checked />Keš <br>
+        <input type="radio" name="placanje" id="kartica" value="kartica" />Kartica <br>
+        <input type="button" value="Izračunaj" id="izracunaj" />
+        <input type="reset" value="Resetuj" id=resetuj />
+      </form>
+      <!-- Klikom na izracunaj prikazati deo ispod -->
+      <div id="kraj_porudzbine">
+        <h3>Vaša porudžbina:</h3>
+        <div id="cvece"></div>
+        <div id="pokloni"></div>
+        <div id="cene"></div>
+      </div>
+
+    </div>
+    <div class="col-3"> &nbsp; </div>
+
+  </div>
+
+
+  <footer class="col-12">
+    <h3>Hvala na ukazanom poverenju!</h3>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

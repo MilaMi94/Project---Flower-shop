@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Comic Sans MS;
+
+}
+
+.row {
+
+    width: 100%;
+    overflow: hidden;
+}
+
+#kraj_porudzbine {
+    display: none;
+}
+
+img {
+    width: 50px;
+}
+
+h3 {
+    color: purple;
+
+}
+
+/*Horizontalni meni*/
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(122, 8, 122);
+}
+
+nav ul {
+
+    overflow: hidden;
+    list-style: none;
+    width: 100%;
+
+}
+
+nav ul li {
+
+    width: 25%;
+    float: left;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+
+
+}
+
+nav ul li:first-of-type {
+    padding: 8px;
+}
+
+nav a:hover {
+    background-color: black;
+}
+
+nav a {
+
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(122, 8, 122);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 500px;
+}
+
+footer h3 {
+    color: white;
+    text-align: center;
+
+}
+
+/*form*/
+
+form {
+    margin-top: 50px;
+    padding-left: 25%;
+}
+
+#kraj_porudzbine {
+    padding-left: 25%;
+}
+
+.order {
+    margin-bottom: 200px;
+}
+
+input {
+    margin: 10px 7px 10px 0px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+input:focus {
+
+    background-color: rgb(234, 204, 241);
+    color: purple;
+}
+
+
+/* Carousel*/
+
+/* Slideshow container */
+.slideshow-container {
+
+    width: 100%;
+
+}
+
+.mySlides {
+    overflow: hidden;
+    height: 500px;
+}
+
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Pozicioniranje desne strelice */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover*/
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+/*Za mobilni*/
+
+@media only screen and (max-width:599px) {
+
+    form {
+
+        margin: 0;
+        padding: 0;
+    }
+
+    [class*="col-"] {
+
+        width: 100%;
+    }
+
+}
+
+
+/*Za desktope*/
+
+@media only screen and (min-width:600px) {
+
+    [class*="col-"] {
+        float: left;
+
+
+    }
+
+    .col-1 {
+        width: 8.33%;
+    }
+
+    .col-2 {
+
+        width: 16.66%;
+    }
+
+    .col-3 {
+
+        width: 25%;
+    }
+
+    .col-4 {
+
+        width: 33.33%;
+    }
+
+    .col-5 {
+
+        width: 41.66%;
+    }
+
+    .col-6 {
+
+        width: 50%;
+    }
+
+    .col-7 {
+
+        width: 58.33%;
+    }
+
+    .col-8 {
+
+        width: 66.66%;
+    }
+
+    .col-9 {
+
+        width: 75%;
+    }
+
+    .col-10 {
+
+        width: 83.33%;
+    }
+
+    .col-11 {
+
+        width: 91.66%;
+    }
+
+    .col-12 {
+
+        width: 100%;
+    }
+
+}
